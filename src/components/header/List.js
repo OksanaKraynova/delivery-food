@@ -1,32 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 const List = () => {
     return (
         <Wrapper>
             <li>
-                <a>Акции</a>
+                <Link to='/'>Акции</Link>
             </li>
             <li>
-                <a>О компании</a>
+                <Link to='/'>О компании</Link>
             </li>
             <li>
-                <a>Пользовательское соглашение</a>
+                <Link to='/' >Пользовательское соглашение</Link>
             </li>
             <li>
-                <a>Условия гарантии</a>
+                <Link to='/'>Условия гарантии</Link>
             </li>
             <li>
-                <a>Ресторан</a>
+                <Link to='/' >Ресторан</Link>
             </li>
             <li>
-                <a>Контакты</a>
+                <Link to='/' >Контакты</Link>
             </li>
             <li>
-                <a>Поддержка</a>
+                <Link to='/' >Поддержка</Link>
             </li>
             <li>
-                <a>Отследить заказ</a>
+                <Link to='/' >Отследить заказ</Link>
             </li>
         </Wrapper>
     );

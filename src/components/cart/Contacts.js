@@ -8,8 +8,8 @@ const Contacts = () => {
             <a href='tel:123456789'><img alt='phone' src='/icons/phone.svg' />+7 (926) 223-10-11</a>
             <p><img alt='' src='/icons/local.svg' />Москва, ул. Юных Ленинцев, д.99</p>
             <Social>
-                <a href='https://facebook.com' target='_blank' className='facebook'> <img alt='facebook' src='/icons/facebook.svg' />Facebok</a>
-                <a href='https://instagram.com' target='_blank' ><img alt='instagram' src='/icons/insta.svg' />Instagram</a>
+                <a href='https://facebook.com' target='_blank' className='facebook' rel='noreferrer'> <img alt='facebook' src='/icons/facebook.svg' />Facebok</a>
+                <a href='https://instagram.com' rel='noreferrer' target='_blank' ><img alt='instagram' src='/icons/insta.svg' />Instagram</a>
             </Social>
         </Wrapper>
     );

@@ -16,16 +16,16 @@ const Footer = () => {
                 </Column>
                 <Column>
                     <span>Куда пицца</span>
-                    <a>О компании</a>
-                    <a>Пользовательское соглашение</a>
-                    <a>Условия гарантии</a>
+                    <NavLink to='/' >О компании</NavLink>
+                    <NavLink to='/'>Пользовательское соглашение</NavLink>
+                    <NavLink to='/'>Условия гарантии</NavLink>
                 </Column>
                 <Column>
                     <span>Помощь</span>
-                    <a>Ресторан</a>
-                    <a>Контакты</a>
-                    <a>Поддержка</a>
-                    <a>Отследить заказ</a>
+                    <NavLink to='/'>Ресторан</NavLink>
+                    <NavLink to='/'>Контакты</NavLink>
+                    <NavLink to='/'>Поддержка</NavLink>
+                    <NavLink to='/'>Отследить заказ</NavLink>
                 </Column>
                 <Column>
                     <span>Контакты</span>

@@ -15,8 +15,8 @@ const UserMenu = (props) => {
     return (
         <Wrapper id='user-menu'>
             <span className='orange'>100 бонусов</span>
-            <a>История заказов</a>
-            <a>Настройки</a>
+            <button>История заказов</button>
+            <bitton>Настройки</bitton>
             <Logout onClick={logout} >Выход из аккаунта</Logout>
 
         </Wrapper>

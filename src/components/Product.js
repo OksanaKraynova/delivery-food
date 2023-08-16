@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components'
+import { addToCart } from '../reducers/cartReducer';
 import { setCurrentGood } from '../reducers/currentGood';
 
 
@@ -10,6 +11,11 @@ const Product = ({ name, cost, description, image, label , active, id, cartQuant
     const handleClick = () => {
         dispatch(setCurrentGood(data))
         active(true)
+    }
+ 
+    const addOrder = item => {
+        dispatch(addToCart(item))
+        
     }
     return (
         <>
@@ -23,7 +29,7 @@ const Product = ({ name, cost, description, image, label , active, id, cartQuant
                 <Name>{name}</Name>
                 {description && <p>{description}</p>}
                 <Order>
-                    <button className='btn btn__big'>Выбрать</button>
+                    <button className='btn btn__big' onClick={() => addOrder(data)}>Выбрать</button>
                     <span className='orange'>от {cost} ₽</span>
                 </Order>
             </Description>

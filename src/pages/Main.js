@@ -23,7 +23,7 @@ const Main = () => {
             <Block name={'Напитки'} goods={drinks} group='drinks' active={setModal} />
             <Block name={'Соусы'} goods={sauce} group='sauce' active={setModal} />
             <Block name={'Комбо'} goods={combo} group='combo' active={setModal} />
-            <CardProduct active={modal } setActive={setModal}  />
+            {/* <CardProduct active={modal } setActive={setModal}  /> */}
         </div>
     );
 };
